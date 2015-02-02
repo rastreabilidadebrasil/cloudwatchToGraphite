@@ -1,0 +1,1018 @@
+{
+  "Reservations": [{
+    "ReservationId": "r-c76baad3",
+    "OwnerId": "070349414311",
+    "Groups": [],
+    "Instances": [{
+      "InstanceId": "i-52d51e46",
+      "ImageId": "ami-aff65eb2",
+      "State": {
+        "Code": 16,
+        "Name": "running"
+      },
+      "PrivateDnsName": "ip-172-31-3-208.sa-east-1.compute.internal",
+      "PublicDnsName": "ec2-54-94-204-214.sa-east-1.compute.amazonaws.com",
+      "StateTransitionReason": "",
+      "KeyName": "rb-prod-key",
+      "AmiLaunchIndex": 1,
+      "ProductCodes": [],
+      "InstanceType": "m3.xlarge",
+      "LaunchTime": "2014-11-28T19:06:24.000Z",
+      "Placement": {
+        "AvailabilityZone": "sa-east-1b",
+        "GroupName": "",
+        "Tenancy": "default"
+      },
+      "KernelId": "aki-5553f448",
+      "Monitoring": {
+        "State": "disabled"
+      },
+      "SubnetId": "subnet-50001e24",
+      "VpcId": "vpc-bb71c7de",
+      "PrivateIpAddress": "172.31.3.208",
+      "PublicIpAddress": "54.94.204.214",
+      "Architecture": "x86_64",
+      "RootDeviceType": "ebs",
+      "RootDeviceName": "/dev/sda1",
+      "BlockDeviceMappings": [{
+        "DeviceName": "/dev/sda1",
+        "Ebs": {
+          "VolumeId": "vol-115f6e17",
+          "Status": "attached",
+          "AttachTime": "2014-08-07T20:30:36.000Z",
+          "DeleteOnTermination": true
+        }
+      }, {
+        "DeviceName": "/dev/sdd",
+        "Ebs": {
+          "VolumeId": "vol-1e5f6e18",
+          "Status": "attached",
+          "AttachTime": "2014-08-07T20:30:36.000Z",
+          "DeleteOnTermination": false
+        }
+      }, {
+        "DeviceName": "/dev/sdb",
+        "Ebs": {
+          "VolumeId": "vol-105f6e16",
+          "Status": "attached",
+          "AttachTime": "2014-08-07T20:30:36.000Z",
+          "DeleteOnTermination": false
+        }
+      }, {
+        "DeviceName": "/dev/sdc",
+        "Ebs": {
+          "VolumeId": "vol-055f6e03",
+          "Status": "attached",
+          "AttachTime": "2014-08-07T20:30:36.000Z",
+          "DeleteOnTermination": false
+        }
+      }],
+      "VirtualizationType": "paravirtual",
+      "ClientToken": "cMxTp1407443430841",
+      "Tags": [{
+        "Key": "Name",
+        "Value": "MongoDB-RS-3"
+      }],
+      "SecurityGroups": [{
+        "GroupName": "MongoDB-VPC-SG",
+        "GroupId": "sg-8047b7e5"
+      }],
+      "SourceDestCheck": true,
+      "Hypervisor": "xen",
+      "NetworkInterfaces": [{
+        "NetworkInterfaceId": "eni-d3f93ca4",
+        "SubnetId": "subnet-50001e24",
+        "VpcId": "vpc-bb71c7de",
+        "Description": "Primary network interface",
+        "OwnerId": "070349414311",
+        "Status": "in-use",
+        "MacAddress": "06:b8:20:5c:df:6b",
+        "PrivateIpAddress": "172.31.3.208",
+        "PrivateDnsName": "ip-172-31-3-208.sa-east-1.compute.internal",
+        "SourceDestCheck": true,
+        "Groups": [{
+          "GroupName": "MongoDB-VPC-SG",
+          "GroupId": "sg-8047b7e5"
+        }],
+        "Attachment": {
+          "AttachmentId": "eni-attach-ed5320fc",
+          "DeviceIndex": 0,
+          "Status": "attached",
+          "AttachTime": "2014-08-07T20:30:33.000Z",
+          "DeleteOnTermination": true
+        },
+        "Association": {
+          "PublicIp": "54.94.204.214",
+          "PublicDnsName": "ec2-54-94-204-214.sa-east-1.compute.amazonaws.com",
+          "IpOwnerId": "amazon"
+        },
+        "PrivateIpAddresses": [{
+          "PrivateIpAddress": "172.31.3.208",
+          "PrivateDnsName": "ip-172-31-3-208.sa-east-1.compute.internal",
+          "Primary": true,
+          "Association": {
+            "PublicIp": "54.94.204.214",
+            "PublicDnsName": "ec2-54-94-204-214.sa-east-1.compute.amazonaws.com",
+            "IpOwnerId": "amazon"
+          }
+        }]
+      }],
+      "EbsOptimized": false
+    }]
+  }, {
+    "ReservationId": "r-b4c46ea1",
+    "OwnerId": "070349414311",
+    "Groups": [],
+    "Instances": [{
+      "InstanceId": "i-352faf20",
+      "ImageId": "ami-9d6cc680",
+      "State": {
+        "Code": 16,
+        "Name": "running"
+      },
+      "PrivateDnsName": "ip-172-31-17-2.sa-east-1.compute.internal",
+      "PublicDnsName": "ec2-54-94-153-70.sa-east-1.compute.amazonaws.com",
+      "StateTransitionReason": "",
+      "KeyName": "rb-prod-key",
+      "AmiLaunchIndex": 0,
+      "ProductCodes": [],
+      "InstanceType": "m3.large",
+      "LaunchTime": "2014-10-01T19:24:58.000Z",
+      "Placement": {
+        "AvailabilityZone": "sa-east-1a",
+        "GroupName": "",
+        "Tenancy": "default"
+      },
+      "KernelId": "aki-5553f448",
+      "Monitoring": {
+        "State": "disabled"
+      },
+      "SubnetId": "subnet-c048b0a5",
+      "VpcId": "vpc-bb71c7de",
+      "PrivateIpAddress": "172.31.17.2",
+      "PublicIpAddress": "54.94.153.70",
+      "Architecture": "x86_64",
+      "RootDeviceType": "ebs",
+      "RootDeviceName": "/dev/sda1",
+      "BlockDeviceMappings": [{
+        "DeviceName": "/dev/sda1",
+        "Ebs": {
+          "VolumeId": "vol-fd00abf0",
+          "Status": "attached",
+          "AttachTime": "2014-10-01T19:25:02.000Z",
+          "DeleteOnTermination": true
+        }
+      }],
+      "VirtualizationType": "paravirtual",
+      "ClientToken": "dLHZe1412191497719",
+      "Tags": [{
+        "Key": "Name",
+        "Value": "Scripts-RB-I"
+      }],
+      "SecurityGroups": [{
+        "GroupName": "WebServers Security Group",
+        "GroupId": "sg-61867404"
+      }],
+      "SourceDestCheck": true,
+      "Hypervisor": "xen",
+      "NetworkInterfaces": [{
+        "NetworkInterfaceId": "eni-53169c36",
+        "SubnetId": "subnet-c048b0a5",
+        "VpcId": "vpc-bb71c7de",
+        "Description": "Primary network interface",
+        "OwnerId": "070349414311",
+        "Status": "in-use",
+        "MacAddress": "02:35:18:b4:aa:94",
+        "PrivateIpAddress": "172.31.17.2",
+        "PrivateDnsName": "ip-172-31-17-2.sa-east-1.compute.internal",
+        "SourceDestCheck": true,
+        "Groups": [{
+          "GroupName": "WebServers Security Group",
+          "GroupId": "sg-61867404"
+        }],
+        "Attachment": {
+          "AttachmentId": "eni-attach-6df36873",
+          "DeviceIndex": 0,
+          "Status": "attached",
+          "AttachTime": "2014-10-01T19:24:58.000Z",
+          "DeleteOnTermination": true
+        },
+        "Association": {
+          "PublicIp": "54.94.153.70",
+          "PublicDnsName": "ec2-54-94-153-70.sa-east-1.compute.amazonaws.com",
+          "IpOwnerId": "amazon"
+        },
+        "PrivateIpAddresses": [{
+          "PrivateIpAddress": "172.31.17.2",
+          "PrivateDnsName": "ip-172-31-17-2.sa-east-1.compute.internal",
+          "Primary": true,
+          "Association": {
+            "PublicIp": "54.94.153.70",
+            "PublicDnsName": "ec2-54-94-153-70.sa-east-1.compute.amazonaws.com",
+            "IpOwnerId": "amazon"
+          }
+        }]
+      }],
+      "EbsOptimized": false
+    }]
+  }, {
+    "ReservationId": "r-52cdb847",
+    "OwnerId": "070349414311",
+    "Groups": [],
+    "Instances": [{
+      "InstanceId": "i-65591170",
+      "ImageId": "ami-9137828c",
+      "State": {
+        "Code": 16,
+        "Name": "running"
+      },
+      "PrivateDnsName": "ip-172-31-19-27.sa-east-1.compute.internal",
+      "PublicDnsName": "ec2-54-94-207-125.sa-east-1.compute.amazonaws.com",
+      "StateTransitionReason": "",
+      "KeyName": "rb-prod-key",
+      "AmiLaunchIndex": 0,
+      "ProductCodes": [],
+      "InstanceType": "m3.xlarge",
+      "LaunchTime": "2015-01-14T19:54:34.000Z",
+      "Placement": {
+        "AvailabilityZone": "sa-east-1a",
+        "GroupName": "",
+        "Tenancy": "default"
+      },
+      "KernelId": "aki-5553f448",
+      "Monitoring": {
+        "State": "enabled"
+      },
+      "SubnetId": "subnet-c048b0a5",
+      "VpcId": "vpc-bb71c7de",
+      "PrivateIpAddress": "172.31.19.27",
+      "PublicIpAddress": "54.94.207.125",
+      "Architecture": "x86_64",
+      "RootDeviceType": "ebs",
+      "RootDeviceName": "/dev/sda1",
+      "BlockDeviceMappings": [{
+        "DeviceName": "/dev/sda1",
+        "Ebs": {
+          "VolumeId": "vol-a9dc20b5",
+          "Status": "attached",
+          "AttachTime": "2015-01-14T19:54:38.000Z",
+          "DeleteOnTermination": true
+        }
+      }, {
+        "DeviceName": "/dev/sdb",
+        "Ebs": {
+          "VolumeId": "vol-a8dc20b4",
+          "Status": "attached",
+          "AttachTime": "2015-01-14T19:54:38.000Z",
+          "DeleteOnTermination": false
+        }
+      }, {
+        "DeviceName": "/dev/sdc",
+        "Ebs": {
+          "VolumeId": "vol-66dc207a",
+          "Status": "attached",
+          "AttachTime": "2015-01-14T19:54:38.000Z",
+          "DeleteOnTermination": false
+        }
+      }],
+      "VirtualizationType": "paravirtual",
+      "ClientToken": "lNPLZ1421265274077",
+      "Tags": [{
+        "Key": "Name",
+        "Value": "Statistics-RB-I-prod"
+      }],
+      "SecurityGroups": [{
+        "GroupName": "WebServers Security Group",
+        "GroupId": "sg-61867404"
+      }, {
+        "GroupName": "STATISTICS-security-group",
+        "GroupId": "sg-e1d51484"
+      }],
+      "SourceDestCheck": true,
+      "Hypervisor": "xen",
+      "NetworkInterfaces": [{
+        "NetworkInterfaceId": "eni-6c5b1609",
+        "SubnetId": "subnet-c048b0a5",
+        "VpcId": "vpc-bb71c7de",
+        "Description": "",
+        "OwnerId": "070349414311",
+        "Status": "in-use",
+        "MacAddress": "02:34:da:d8:94:d8",
+        "PrivateIpAddress": "172.31.19.27",
+        "PrivateDnsName": "ip-172-31-19-27.sa-east-1.compute.internal",
+        "SourceDestCheck": true,
+        "Groups": [{
+          "GroupName": "WebServers Security Group",
+          "GroupId": "sg-61867404"
+        }, {
+          "GroupName": "STATISTICS-security-group",
+          "GroupId": "sg-e1d51484"
+        }],
+        "Attachment": {
+          "AttachmentId": "eni-attach-c25925dc",
+          "DeviceIndex": 0,
+          "Status": "attached",
+          "AttachTime": "2015-01-14T19:54:34.000Z",
+          "DeleteOnTermination": true
+        },
+        "Association": {
+          "PublicIp": "54.94.207.125",
+          "PublicDnsName": "ec2-54-94-207-125.sa-east-1.compute.amazonaws.com",
+          "IpOwnerId": "amazon"
+        },
+        "PrivateIpAddresses": [{
+          "PrivateIpAddress": "172.31.19.27",
+          "PrivateDnsName": "ip-172-31-19-27.sa-east-1.compute.internal",
+          "Primary": true,
+          "Association": {
+            "PublicIp": "54.94.207.125",
+            "PublicDnsName": "ec2-54-94-207-125.sa-east-1.compute.amazonaws.com",
+            "IpOwnerId": "amazon"
+          }
+        }]
+      }],
+      "EbsOptimized": false
+    }]
+  }, {
+    "ReservationId": "r-42c71c57",
+    "OwnerId": "070349414311",
+    "Groups": [],
+    "Instances": [{
+      "InstanceId": "i-cfd96eda",
+      "ImageId": "ami-c7e649da",
+      "State": {
+        "Code": 80,
+        "Name": "stopped"
+      },
+      "PrivateDnsName": "ip-172-31-24-147.sa-east-1.compute.internal",
+      "PublicDnsName": "",
+      "StateTransitionReason": "User initiated (2014-11-17 13:21:33 GMT)",
+      "KeyName": "rb-prod-key",
+      "AmiLaunchIndex": 0,
+      "ProductCodes": [],
+      "InstanceType": "m3.large",
+      "LaunchTime": "2014-09-05T12:40:44.000Z",
+      "Placement": {
+        "AvailabilityZone": "sa-east-1a",
+        "GroupName": "",
+        "Tenancy": "default"
+      },
+      "KernelId": "aki-5553f448",
+      "Monitoring": {
+        "State": "disabled"
+      },
+      "SubnetId": "subnet-c048b0a5",
+      "VpcId": "vpc-bb71c7de",
+      "PrivateIpAddress": "172.31.24.147",
+      "StateReason": {
+        "Code": "Client.UserInitiatedShutdown",
+        "Message": "Client.UserInitiatedShutdown: User initiated shutdown"
+      },
+      "Architecture": "x86_64",
+      "RootDeviceType": "ebs",
+      "RootDeviceName": "/dev/sda1",
+      "BlockDeviceMappings": [{
+        "DeviceName": "/dev/sda1",
+        "Ebs": {
+          "VolumeId": "vol-3b8a2c36",
+          "Status": "attached",
+          "AttachTime": "2014-09-05T12:40:49.000Z",
+          "DeleteOnTermination": true
+        }
+      }],
+      "VirtualizationType": "paravirtual",
+      "ClientToken": "TxxvG1409920843819",
+      "Tags": [{
+        "Key": "Name",
+        "Value": "User-RB-2"
+      }],
+      "SecurityGroups": [{
+        "GroupName": "WebServers Security Group",
+        "GroupId": "sg-61867404"
+      }],
+      "SourceDestCheck": true,
+      "Hypervisor": "xen",
+      "NetworkInterfaces": [{
+        "NetworkInterfaceId": "eni-4f16972a",
+        "SubnetId": "subnet-c048b0a5",
+        "VpcId": "vpc-bb71c7de",
+        "Description": "Primary network interface",
+        "OwnerId": "070349414311",
+        "Status": "in-use",
+        "MacAddress": "02:54:0e:7d:4c:15",
+        "PrivateIpAddress": "172.31.24.147",
+        "PrivateDnsName": "ip-172-31-24-147.sa-east-1.compute.internal",
+        "SourceDestCheck": true,
+        "Groups": [{
+          "GroupName": "WebServers Security Group",
+          "GroupId": "sg-61867404"
+        }],
+        "Attachment": {
+          "AttachmentId": "eni-attach-c945d8d7",
+          "DeviceIndex": 0,
+          "Status": "attached",
+          "AttachTime": "2014-09-05T12:40:44.000Z",
+          "DeleteOnTermination": true
+        },
+        "PrivateIpAddresses": [{
+          "PrivateIpAddress": "172.31.24.147",
+          "PrivateDnsName": "ip-172-31-24-147.sa-east-1.compute.internal",
+          "Primary": true
+        }]
+      }],
+      "EbsOptimized": false
+    }]
+  }, {
+    "ReservationId": "r-e44ac4f1",
+    "OwnerId": "070349414311",
+    "Groups": [],
+    "Instances": [{
+      "InstanceId": "i-cd2042d8",
+      "ImageId": "ami-9137828c",
+      "State": {
+        "Code": 16,
+        "Name": "running"
+      },
+      "PrivateDnsName": "ip-172-31-29-3.sa-east-1.compute.internal",
+      "PublicDnsName": "ec2-54-94-204-157.sa-east-1.compute.amazonaws.com",
+      "StateTransitionReason": "",
+      "KeyName": "rb-prod-key",
+      "AmiLaunchIndex": 0,
+      "ProductCodes": [],
+      "InstanceType": "m3.large",
+      "LaunchTime": "2014-11-13T16:06:22.000Z",
+      "Placement": {
+        "AvailabilityZone": "sa-east-1a",
+        "GroupName": "",
+        "Tenancy": "default"
+      },
+      "KernelId": "aki-5553f448",
+      "Monitoring": {
+        "State": "disabled"
+      },
+      "SubnetId": "subnet-c048b0a5",
+      "VpcId": "vpc-bb71c7de",
+      "PrivateIpAddress": "172.31.29.3",
+      "PublicIpAddress": "54.94.204.157",
+      "Architecture": "x86_64",
+      "RootDeviceType": "ebs",
+      "RootDeviceName": "/dev/sda1",
+      "BlockDeviceMappings": [{
+        "DeviceName": "/dev/sda1",
+        "Ebs": {
+          "VolumeId": "vol-274b533a",
+          "Status": "attached",
+          "AttachTime": "2014-11-13T16:06:26.000Z",
+          "DeleteOnTermination": true
+        }
+      }],
+      "VirtualizationType": "paravirtual",
+      "ClientToken": "YFDEH1415894781517",
+      "Tags": [{
+        "Key": "Name",
+        "Value": "Statistics-RB-I"
+      }],
+      "SecurityGroups": [{
+        "GroupName": "WebServers Security Group",
+        "GroupId": "sg-61867404"
+      }, {
+        "GroupName": "STATISTICS-security-group",
+        "GroupId": "sg-e1d51484"
+      }],
+      "SourceDestCheck": true,
+      "Hypervisor": "xen",
+      "NetworkInterfaces": [{
+        "NetworkInterfaceId": "eni-ce7515ab",
+        "SubnetId": "subnet-c048b0a5",
+        "VpcId": "vpc-bb71c7de",
+        "Description": "Primary network interface",
+        "OwnerId": "070349414311",
+        "Status": "in-use",
+        "MacAddress": "02:4d:c3:64:75:49",
+        "PrivateIpAddress": "172.31.29.3",
+        "PrivateDnsName": "ip-172-31-29-3.sa-east-1.compute.internal",
+        "SourceDestCheck": true,
+        "Groups": [{
+          "GroupName": "WebServers Security Group",
+          "GroupId": "sg-61867404"
+        }, {
+          "GroupName": "STATISTICS-security-group",
+          "GroupId": "sg-e1d51484"
+        }],
+        "Attachment": {
+          "AttachmentId": "eni-attach-73e4866d",
+          "DeviceIndex": 0,
+          "Status": "attached",
+          "AttachTime": "2014-11-13T16:06:22.000Z",
+          "DeleteOnTermination": true
+        },
+        "Association": {
+          "PublicIp": "54.94.204.157",
+          "PublicDnsName": "ec2-54-94-204-157.sa-east-1.compute.amazonaws.com",
+          "IpOwnerId": "amazon"
+        },
+        "PrivateIpAddresses": [{
+          "PrivateIpAddress": "172.31.29.3",
+          "PrivateDnsName": "ip-172-31-29-3.sa-east-1.compute.internal",
+          "Primary": true,
+          "Association": {
+            "PublicIp": "54.94.204.157",
+            "PublicDnsName": "ec2-54-94-204-157.sa-east-1.compute.amazonaws.com",
+            "IpOwnerId": "amazon"
+          }
+        }]
+      }],
+      "EbsOptimized": false
+    }]
+  }, {
+    "ReservationId": "r-0469a611",
+    "OwnerId": "070349414311",
+    "Groups": [],
+    "Instances": [{
+      "InstanceId": "i-ff7da2ea",
+      "ImageId": "ami-c7e649da",
+      "State": {
+        "Code": 16,
+        "Name": "running"
+      },
+      "PrivateDnsName": "ip-172-31-31-184.sa-east-1.compute.internal",
+      "PublicDnsName": "ec2-54-94-153-100.sa-east-1.compute.amazonaws.com",
+      "StateTransitionReason": "",
+      "KeyName": "rb-prod-key",
+      "AmiLaunchIndex": 0,
+      "ProductCodes": [],
+      "InstanceType": "m3.xlarge",
+      "LaunchTime": "2014-08-07T19:55:33.000Z",
+      "Placement": {
+        "AvailabilityZone": "sa-east-1a",
+        "GroupName": "",
+        "Tenancy": "default"
+      },
+      "KernelId": "aki-5553f448",
+      "Monitoring": {
+        "State": "enabled"
+      },
+      "SubnetId": "subnet-c048b0a5",
+      "VpcId": "vpc-bb71c7de",
+      "PrivateIpAddress": "172.31.31.184",
+      "PublicIpAddress": "54.94.153.100",
+      "Architecture": "x86_64",
+      "RootDeviceType": "ebs",
+      "RootDeviceName": "/dev/sda1",
+      "BlockDeviceMappings": [{
+        "DeviceName": "/dev/sda1",
+        "Ebs": {
+          "VolumeId": "vol-6b1ccf66",
+          "Status": "attached",
+          "AttachTime": "2014-08-07T19:55:38.000Z",
+          "DeleteOnTermination": true
+        }
+      }, {
+        "DeviceName": "/dev/sdb",
+        "Ebs": {
+          "VolumeId": "vol-7f1ccf72",
+          "Status": "attached",
+          "AttachTime": "2014-08-07T19:55:38.000Z",
+          "DeleteOnTermination": false
+        }
+      }, {
+        "DeviceName": "/dev/sdc",
+        "Ebs": {
+          "VolumeId": "vol-7e1ccf73",
+          "Status": "attached",
+          "AttachTime": "2014-08-07T19:55:38.000Z",
+          "DeleteOnTermination": false
+        }
+      }, {
+        "DeviceName": "/dev/sdd",
+        "Ebs": {
+          "VolumeId": "vol-6a1ccf67",
+          "Status": "attached",
+          "AttachTime": "2014-08-07T19:55:38.000Z",
+          "DeleteOnTermination": false
+        }
+      }],
+      "VirtualizationType": "paravirtual",
+      "ClientToken": "qikLC1407441332217",
+      "Tags": [{
+        "Key": "Name",
+        "Value": "MongoDB-RS-1"
+      }],
+      "SecurityGroups": [{
+        "GroupName": "MongoDB-VPC-SG",
+        "GroupId": "sg-8047b7e5"
+      }],
+      "SourceDestCheck": true,
+      "Hypervisor": "xen",
+      "NetworkInterfaces": [{
+        "NetworkInterfaceId": "eni-936dd0f6",
+        "SubnetId": "subnet-c048b0a5",
+        "VpcId": "vpc-bb71c7de",
+        "Description": "",
+        "OwnerId": "070349414311",
+        "Status": "in-use",
+        "MacAddress": "02:26:b9:a9:12:16",
+        "PrivateIpAddress": "172.31.31.184",
+        "PrivateDnsName": "ip-172-31-31-184.sa-east-1.compute.internal",
+        "SourceDestCheck": true,
+        "Groups": [{
+          "GroupName": "MongoDB-VPC-SG",
+          "GroupId": "sg-8047b7e5"
+        }],
+        "Attachment": {
+          "AttachmentId": "eni-attach-c5aa3ddb",
+          "DeviceIndex": 0,
+          "Status": "attached",
+          "AttachTime": "2014-08-07T19:55:33.000Z",
+          "DeleteOnTermination": true
+        },
+        "Association": {
+          "PublicIp": "54.94.153.100",
+          "PublicDnsName": "ec2-54-94-153-100.sa-east-1.compute.amazonaws.com",
+          "IpOwnerId": "amazon"
+        },
+        "PrivateIpAddresses": [{
+          "PrivateIpAddress": "172.31.31.184",
+          "PrivateDnsName": "ip-172-31-31-184.sa-east-1.compute.internal",
+          "Primary": true,
+          "Association": {
+            "PublicIp": "54.94.153.100",
+            "PublicDnsName": "ec2-54-94-153-100.sa-east-1.compute.amazonaws.com",
+            "IpOwnerId": "amazon"
+          }
+        }]
+      }],
+      "EbsOptimized": false
+    }]
+  }, {
+    "ReservationId": "r-9ac9bc8f",
+    "OwnerId": "070349414311",
+    "Groups": [],
+    "Instances": [{
+      "InstanceId": "i-055e1610",
+      "ImageId": "ami-69d26774",
+      "State": {
+        "Code": 80,
+        "Name": "stopped"
+      },
+      "PrivateDnsName": "ip-172-31-23-56.sa-east-1.compute.internal",
+      "PublicDnsName": "",
+      "StateTransitionReason": "User initiated (2015-01-15 12:01:55 GMT)",
+      "KeyName": "rb-prod-key",
+      "AmiLaunchIndex": 0,
+      "ProductCodes": [],
+      "InstanceType": "t2.micro",
+      "LaunchTime": "2015-01-14T22:29:10.000Z",
+      "Placement": {
+        "AvailabilityZone": "sa-east-1a",
+        "GroupName": "",
+        "Tenancy": "default"
+      },
+      "Monitoring": {
+        "State": "disabled"
+      },
+      "SubnetId": "subnet-c048b0a5",
+      "VpcId": "vpc-bb71c7de",
+      "PrivateIpAddress": "172.31.23.56",
+      "StateReason": {
+        "Code": "Client.UserInitiatedShutdown",
+        "Message": "Client.UserInitiatedShutdown: User initiated shutdown"
+      },
+      "Architecture": "x86_64",
+      "RootDeviceType": "ebs",
+      "RootDeviceName": "/dev/sda1",
+      "BlockDeviceMappings": [{
+        "DeviceName": "/dev/sda1",
+        "Ebs": {
+          "VolumeId": "vol-8edf2392",
+          "Status": "attached",
+          "AttachTime": "2015-01-14T20:27:11.000Z",
+          "DeleteOnTermination": true
+        }
+      }],
+      "VirtualizationType": "hvm",
+      "ClientToken": "URHZz1421267227559",
+      "Tags": [{
+        "Key": "Name",
+        "Value": "prod.chef-server"
+      }],
+      "SecurityGroups": [{
+        "GroupName": "prod.chef",
+        "GroupId": "sg-cf5d8caa"
+      }],
+      "SourceDestCheck": true,
+      "Hypervisor": "xen",
+      "NetworkInterfaces": [{
+        "NetworkInterfaceId": "eni-ad5419c8",
+        "SubnetId": "subnet-c048b0a5",
+        "VpcId": "vpc-bb71c7de",
+        "Description": "Primary network interface",
+        "OwnerId": "070349414311",
+        "Status": "in-use",
+        "MacAddress": "02:3f:91:9e:45:a7",
+        "PrivateIpAddress": "172.31.23.56",
+        "PrivateDnsName": "ip-172-31-23-56.sa-east-1.compute.internal",
+        "SourceDestCheck": true,
+        "Groups": [{
+          "GroupName": "prod.chef",
+          "GroupId": "sg-cf5d8caa"
+        }],
+        "Attachment": {
+          "AttachmentId": "eni-attach-a45b27ba",
+          "DeviceIndex": 0,
+          "Status": "attached",
+          "AttachTime": "2015-01-14T20:27:08.000Z",
+          "DeleteOnTermination": true
+        },
+        "PrivateIpAddresses": [{
+          "PrivateIpAddress": "172.31.23.56",
+          "PrivateDnsName": "ip-172-31-23-56.sa-east-1.compute.internal",
+          "Primary": true
+        }]
+      }],
+      "EbsOptimized": false
+    }]
+  }, {
+    "ReservationId": "r-baee25af",
+    "OwnerId": "070349414311",
+    "Groups": [],
+    "Instances": [{
+      "InstanceId": "i-a978a3bc",
+      "ImageId": "ami-c7e649da",
+      "State": {
+        "Code": 80,
+        "Name": "stopped"
+      },
+      "PrivateDnsName": "ip-172-31-21-37.sa-east-1.compute.internal",
+      "PublicDnsName": "ec2-54-207-119-192.sa-east-1.compute.amazonaws.com",
+      "StateTransitionReason": "User initiated (2014-11-17 13:21:43 GMT)",
+      "KeyName": "rb-prod-key",
+      "AmiLaunchIndex": 3,
+      "ProductCodes": [],
+      "InstanceType": "m3.large",
+      "LaunchTime": "2014-10-20T09:56:03.000Z",
+      "Placement": {
+        "AvailabilityZone": "sa-east-1a",
+        "GroupName": "",
+        "Tenancy": "default"
+      },
+      "KernelId": "aki-5553f448",
+      "Monitoring": {
+        "State": "enabled"
+      },
+      "SubnetId": "subnet-c048b0a5",
+      "VpcId": "vpc-bb71c7de",
+      "PrivateIpAddress": "172.31.21.37",
+      "PublicIpAddress": "54.207.119.192",
+      "StateReason": {
+        "Code": "Client.UserInitiatedShutdown",
+        "Message": "Client.UserInitiatedShutdown: User initiated shutdown"
+      },
+      "Architecture": "x86_64",
+      "RootDeviceType": "ebs",
+      "RootDeviceName": "/dev/sda1",
+      "BlockDeviceMappings": [{
+        "DeviceName": "/dev/sda1",
+        "Ebs": {
+          "VolumeId": "vol-927fa29f",
+          "Status": "attached",
+          "AttachTime": "2014-08-13T18:26:30.000Z",
+          "DeleteOnTermination": true
+        }
+      }],
+      "VirtualizationType": "paravirtual",
+      "ClientToken": "gVvtA1407954386652",
+      "Tags": [{
+        "Key": "Name",
+        "Value": "Track-RB-II"
+      }],
+      "SecurityGroups": [{
+        "GroupName": "WebServers Security Group",
+        "GroupId": "sg-61867404"
+      }],
+      "SourceDestCheck": true,
+      "Hypervisor": "xen",
+      "NetworkInterfaces": [{
+        "NetworkInterfaceId": "eni-1c7dc379",
+        "SubnetId": "subnet-c048b0a5",
+        "VpcId": "vpc-bb71c7de",
+        "Description": "",
+        "OwnerId": "070349414311",
+        "Status": "in-use",
+        "MacAddress": "02:06:a9:48:70:ec",
+        "PrivateIpAddress": "172.31.21.37",
+        "PrivateDnsName": "ip-172-31-21-37.sa-east-1.compute.internal",
+        "SourceDestCheck": true,
+        "Groups": [{
+          "GroupName": "WebServers Security Group",
+          "GroupId": "sg-61867404"
+        }],
+        "Attachment": {
+          "AttachmentId": "eni-attach-3b148225",
+          "DeviceIndex": 0,
+          "Status": "attached",
+          "AttachTime": "2014-08-13T18:26:27.000Z",
+          "DeleteOnTermination": true
+        },
+        "Association": {
+          "PublicIp": "54.207.119.192",
+          "PublicDnsName": "ec2-54-207-119-192.sa-east-1.compute.amazonaws.com",
+          "IpOwnerId": "070349414311"
+        },
+        "PrivateIpAddresses": [{
+          "PrivateIpAddress": "172.31.21.37",
+          "PrivateDnsName": "ip-172-31-21-37.sa-east-1.compute.internal",
+          "Primary": true,
+          "Association": {
+            "PublicIp": "54.207.119.192",
+            "PublicDnsName": "ec2-54-207-119-192.sa-east-1.compute.amazonaws.com",
+            "IpOwnerId": "070349414311"
+          }
+        }]
+      }],
+      "EbsOptimized": false
+    }, {
+      "InstanceId": "i-a878a3bd",
+      "ImageId": "ami-c7e649da",
+      "State": {
+        "Code": 16,
+        "Name": "running"
+      },
+      "PrivateDnsName": "ip-172-31-21-36.sa-east-1.compute.internal",
+      "PublicDnsName": "ec2-54-94-184-42.sa-east-1.compute.amazonaws.com",
+      "StateTransitionReason": "",
+      "KeyName": "rb-prod-key",
+      "AmiLaunchIndex": 2,
+      "ProductCodes": [],
+      "InstanceType": "m3.large",
+      "LaunchTime": "2014-08-13T18:26:27.000Z",
+      "Placement": {
+        "AvailabilityZone": "sa-east-1a",
+        "GroupName": "",
+        "Tenancy": "default"
+      },
+      "KernelId": "aki-5553f448",
+      "Monitoring": {
+        "State": "enabled"
+      },
+      "SubnetId": "subnet-c048b0a5",
+      "VpcId": "vpc-bb71c7de",
+      "PrivateIpAddress": "172.31.21.36",
+      "PublicIpAddress": "54.94.184.42",
+      "Architecture": "x86_64",
+      "RootDeviceType": "ebs",
+      "RootDeviceName": "/dev/sda1",
+      "BlockDeviceMappings": [{
+        "DeviceName": "/dev/sda1",
+        "Ebs": {
+          "VolumeId": "vol-887fa285",
+          "Status": "attached",
+          "AttachTime": "2014-08-13T18:26:30.000Z",
+          "DeleteOnTermination": true
+        }
+      }],
+      "VirtualizationType": "paravirtual",
+      "ClientToken": "gVvtA1407954386652",
+      "Tags": [{
+        "Key": "Name",
+        "Value": "Track-RB-I"
+      }],
+      "SecurityGroups": [{
+        "GroupName": "WebServers Security Group",
+        "GroupId": "sg-61867404"
+      }],
+      "SourceDestCheck": true,
+      "Hypervisor": "xen",
+      "NetworkInterfaces": [{
+        "NetworkInterfaceId": "eni-1f7dc37a",
+        "SubnetId": "subnet-c048b0a5",
+        "VpcId": "vpc-bb71c7de",
+        "Description": "",
+        "OwnerId": "070349414311",
+        "Status": "in-use",
+        "MacAddress": "02:62:6e:f0:a0:2b",
+        "PrivateIpAddress": "172.31.21.36",
+        "PrivateDnsName": "ip-172-31-21-36.sa-east-1.compute.internal",
+        "SourceDestCheck": true,
+        "Groups": [{
+          "GroupName": "WebServers Security Group",
+          "GroupId": "sg-61867404"
+        }],
+        "Attachment": {
+          "AttachmentId": "eni-attach-3c148222",
+          "DeviceIndex": 0,
+          "Status": "attached",
+          "AttachTime": "2014-08-13T18:26:27.000Z",
+          "DeleteOnTermination": true
+        },
+        "Association": {
+          "PublicIp": "54.94.184.42",
+          "PublicDnsName": "ec2-54-94-184-42.sa-east-1.compute.amazonaws.com",
+          "IpOwnerId": "amazon"
+        },
+        "PrivateIpAddresses": [{
+          "PrivateIpAddress": "172.31.21.36",
+          "PrivateDnsName": "ip-172-31-21-36.sa-east-1.compute.internal",
+          "Primary": true,
+          "Association": {
+            "PublicIp": "54.94.184.42",
+            "PublicDnsName": "ec2-54-94-184-42.sa-east-1.compute.amazonaws.com",
+            "IpOwnerId": "amazon"
+          }
+        }]
+      }],
+      "EbsOptimized": false
+    }, {
+      "InstanceId": "i-aa78a3bf",
+      "ImageId": "ami-c7e649da",
+      "State": {
+        "Code": 16,
+        "Name": "running"
+      },
+      "PrivateDnsName": "ip-172-31-21-38.sa-east-1.compute.internal",
+      "PublicDnsName": "ec2-54-94-184-225.sa-east-1.compute.amazonaws.com",
+      "StateTransitionReason": "",
+      "KeyName": "rb-prod-key",
+      "AmiLaunchIndex": 0,
+      "ProductCodes": [],
+      "InstanceType": "m3.large",
+      "LaunchTime": "2014-08-13T18:26:27.000Z",
+      "Placement": {
+        "AvailabilityZone": "sa-east-1a",
+        "GroupName": "",
+        "Tenancy": "default"
+      },
+      "KernelId": "aki-5553f448",
+      "Monitoring": {
+        "State": "enabled"
+      },
+      "SubnetId": "subnet-c048b0a5",
+      "VpcId": "vpc-bb71c7de",
+      "PrivateIpAddress": "172.31.21.38",
+      "PublicIpAddress": "54.94.184.225",
+      "Architecture": "x86_64",
+      "RootDeviceType": "ebs",
+      "RootDeviceName": "/dev/sda1",
+      "BlockDeviceMappings": [{
+        "DeviceName": "/dev/sda1",
+        "Ebs": {
+          "VolumeId": "vol-937fa29e",
+          "Status": "attached",
+          "AttachTime": "2014-08-13T18:26:30.000Z",
+          "DeleteOnTermination": true
+        }
+      }],
+      "VirtualizationType": "paravirtual",
+      "ClientToken": "gVvtA1407954386652",
+      "Tags": [{
+        "Key": "Name",
+        "Value": "User-RB-I"
+      }],
+      "SecurityGroups": [{
+        "GroupName": "WebServers Security Group",
+        "GroupId": "sg-61867404"
+      }],
+      "SourceDestCheck": true,
+      "Hypervisor": "xen",
+      "NetworkInterfaces": [{
+        "NetworkInterfaceId": "eni-1e7dc37b",
+        "SubnetId": "subnet-c048b0a5",
+        "VpcId": "vpc-bb71c7de",
+        "Description": "",
+        "OwnerId": "070349414311",
+        "Status": "in-use",
+        "MacAddress": "02:f1:a0:ba:71:17",
+        "PrivateIpAddress": "172.31.21.38",
+        "PrivateDnsName": "ip-172-31-21-38.sa-east-1.compute.internal",
+        "SourceDestCheck": true,
+        "Groups": [{
+          "GroupName": "WebServers Security Group",
+          "GroupId": "sg-61867404"
+        }],
+        "Attachment": {
+          "AttachmentId": "eni-attach-3e148220",
+          "DeviceIndex": 0,
+          "Status": "attached",
+          "AttachTime": "2014-08-13T18:26:27.000Z",
+          "DeleteOnTermination": true
+        },
+        "Association": {
+          "PublicIp": "54.94.184.225",
+          "PublicDnsName": "ec2-54-94-184-225.sa-east-1.compute.amazonaws.com",
+          "IpOwnerId": "amazon"
+        },
+        "PrivateIpAddresses": [{
+          "PrivateIpAddress": "172.31.21.38",
+          "PrivateDnsName": "ip-172-31-21-38.sa-east-1.compute.internal",
+          "Primary": true,
+          "Association": {
+            "PublicIp": "54.94.184.225",
+            "PublicDnsName": "ec2-54-94-184-225.sa-east-1.compute.amazonaws.com",
+            "IpOwnerId": "amazon"
+          }
+        }]
+      }],
+      "EbsOptimized": false
+    }]
+  }]
+}
