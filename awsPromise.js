@@ -21,14 +21,16 @@ var awsPromiseWrapper = function() {
 
   getMetricStatisticsPromise = Q.nbind(cloudWatch.getMetricStatistics, cloudWatch);
 
+  listMetricsPromises = Q.nbind(cloudWatch.listMetrics, cloudWatch);
+
 
 
   return {
     describeVolumes: describeVolumesPromise,
     describeInstances: describeInstancesPromise,
     listMetrics: listMetricsPromise,
-    getMetricStatistics: getMetricStatisticsPromise
-
+    getMetricStatistics: getMetricStatisticsPromise,
+    listMetrics: listMetricsPromises
   }
 
 }();
