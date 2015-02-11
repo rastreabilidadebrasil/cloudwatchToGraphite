@@ -1,4 +1,4 @@
-var Q = require('Q');
+var Q = require('q');
 var AWS = require('aws-sdk');
 var awsPromiseWrapper = require('./awsPromise')
 var _ = require('lodash');
@@ -15,7 +15,7 @@ var params = {
   }]
 };
 var elements = {};
-
+var minutesBefore=5;
 
 var dataProcessor = function(metric, server) {
   return function(data) {
@@ -45,7 +45,7 @@ var SQSparams = {
     Value: 'AWS/SQS'
   }]
 };
-awsPromiseWrapper.listMetrics(SQSparams).done(function(data) {
+awsPromiseWrapper.listMetrics(SQSparams).then(function(data) {
   data.Metrics.forEach(function(metric) {
     var EndTime = new Date
     var cwParams = {
@@ -53,7 +53,7 @@ awsPromiseWrapper.listMetrics(SQSparams).done(function(data) {
       MetricName: metric.MetricName,
       Namespace: metric.Namespace,
       Period: 60,
-      StartTime: new Date(EndTime.getTime() - 30 * 60 * 1000),
+      StartTime: new Date(EndTime.getTime() - minutesBefore * 60 * 1000),
       Statistics: [
         'Average',
         'Sum'
@@ -64,6 +64,8 @@ awsPromiseWrapper.listMetrics(SQSparams).done(function(data) {
       Name: 'SQS'
     }));
   });
+}).catch(function(error){
+console.log(error);
 });
 
 
@@ -86,7 +88,7 @@ Q.all([awsPromiseWrapper.describeInstances(params), awsPromiseWrapper.describeVo
     awsPromiseWrapper.listMetrics({
       Dimensions: [{
         Name: 'InstanceId',
-        Value: 'i-ff7da2ea'
+        Value: server.id
       }]
     }).done(function(data) {
       data.Metrics.forEach(function(metric) {
@@ -96,7 +98,7 @@ Q.all([awsPromiseWrapper.describeInstances(params), awsPromiseWrapper.describeVo
           MetricName: metric.MetricName,
           Namespace: metric.Namespace,
           Period: 60,
-          StartTime: new Date(EndTime.getTime() - 30 * 60 * 1000),
+          StartTime: new Date(EndTime.getTime() - minutesBefore * 60 * 1000),
           Statistics: [
             'Average',
             'Sum'
@@ -108,4 +110,7 @@ Q.all([awsPromiseWrapper.describeInstances(params), awsPromiseWrapper.describeVo
       });
     });
   });
+}).catch(function(error){
+console.log(error);
 });
+

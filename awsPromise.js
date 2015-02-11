@@ -1,4 +1,4 @@
-var Q = require('Q');
+var Q = require('q');
 var AWS = require('aws-sdk');
 
 var ec2 = new AWS.EC2({
