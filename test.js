@@ -31,14 +31,14 @@ var dataProcessor = function(metric, server) {
       var uriStr = _.chain(uri).compact().map(function(element) {
         return element.replace('/', '_').replace(' ', '_').toLowerCase();
       }).value().join('.');
-      if (server.Type === 'mongo') {
-        console.log([uriStr.replace('_statstype', '_average'), point.Average,
-          point.Timestamp.getTime() / 1000
-        ].join(' '));
-        console.log([uriStr.replace('_statstype', '_sum'), point.Sum,
-          point.Timestamp.getTime() / 1000
-        ].join(' '));
-      }
+
+      console.log([uriStr.replace('_statstype', '_average'), point.Average,
+        point.Timestamp.getTime() / 1000
+      ].join(' '));
+      console.log([uriStr.replace('_statstype', '_sum'), point.Sum,
+        point.Timestamp.getTime() / 1000
+      ].join(' '));
+
 
     });
   }
@@ -116,7 +116,10 @@ Q.all([awsPromiseWrapper.describeInstances(params), awsPromiseWrapper.describeVo
 
       });
 
+      _.map(instance.Tags, function(tag) {
+        server[tag.Key] = tag.Value
 
+      })
       elements.instances.push(server);
 
 
